@@ -18,7 +18,7 @@ After creating the app, go to the Keys and tokens page to collect the `API key`,
 
 ## Phase 2: Download the target account's tweets into a CSV file.
 
-### Step 1: Install the dependencies for the Max Wolff's [python script.](https://github.com/minimaxir/download-tweets-ai-text-gen)
+### Step 1: Install the dependencies for Max Wolff's [python script.](https://github.com/minimaxir/download-tweets-ai-text-gen)
 
 Enter `pip3 install twint==2.1.4 fire tqdm` into the command line of your system's Terminal, making sure you are in the same directory where the project is saved.
 
