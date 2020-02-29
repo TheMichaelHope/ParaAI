@@ -123,6 +123,16 @@ Twitter doesn't let you tweet more than 280 characters. You also shouldn't recei
 
 ## Appendix
 
+You only need these first three starter files in the repo (plus the text file) to actually run the bot, but by the time you get to this part of the README you should have in your project directory the following files:
+
+* server.py
+* credentials.py
+* download_tweets.py
+* YourUsername_tweets.csv
+* gpt2_gentext_YYYYMMDD_HHMMSS.txt (mulitple)
+
+If you are missing one of these, you messed up somewhere, you should probably start over.
+
 If you have any other questions about this or run into any issues, you can reach me on Twitter @Paracelsus.
 
 A follow-up/update this project would involve:
