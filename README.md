@@ -95,7 +95,7 @@ An ideal frequency would be 2-5 minutes but 10 is often enough to be novel witho
 * That it’s posting AI-generated tweets.
 * That those tweets are curated by you (or not curated by you)
 * The Twitter account of who maintains the bot (should be your account)
-* The Twitter account(s) the bot is parodying/ is based upon. (should be accounts you have access to/permission to use for this)
+* The Twitter account(s) the bot is parodying/based on. (should be accounts you have access to/permission to use for this)
 
 **It should also very clearly indicate that it is not a real human being.** A username like 'PersonAI' or 'PersonBot' should do fine.
 
