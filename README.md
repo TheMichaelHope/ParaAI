@@ -1,4 +1,4 @@
-# How to create your very own AI Twitter bot.
+# This will walk you through the process of creating your very own AI Twitter bot.
 
 ## Phase 1: Create a new Twitter account for the bot with developer access.
 
