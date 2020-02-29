@@ -80,7 +80,7 @@ In the line that says `filename = open('YOUR_TWEETS.txt','r')`, replace YOUR_TWE
 
 ### Step 4: Tell the server how often to tweet.
 
-After all the error handling lines you will see a line at the every end: `time.sleep(600)`.
+After all the error handling lines you will see a line at the very end: `time.sleep(600)`.
 
 This line tells the server to wait for 600 seconds (ten minutes) before iterating through the `bot_output` container to bring up the next tweet. If this line wasn't here your bot would attempt to tweet as fast as your computer could compile the program. Twitter's API does not like that. 
 
