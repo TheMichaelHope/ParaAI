@@ -154,3 +154,6 @@ credentials.py — Myself
 
 
 
+## License
+
+MIT
