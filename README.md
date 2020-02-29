@@ -144,7 +144,7 @@ A follow-up/update to this project would involve:
 
 ## Credits
 
-download_tweets.py script — [Max Wolff](https://github.com/minimaxir)
+download_tweets.py — [Max Wolff](https://github.com/minimaxir)
 
 GPT2 Training Google Colaboratory Notebook — Max Wolff
 
