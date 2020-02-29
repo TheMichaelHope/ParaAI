@@ -103,7 +103,7 @@ An ideal frequency would be 2-5 minutes but 10 is often enough to be novel witho
 
 With that, you now have everything you need to get the bot up and running. 
 
-Simply open your terminal, and run the command `python3 server.py`.
+Simply open your terminal, navigate to the project folder, and run the command `python3 server.py`.
 
 Note that like with any program, this bot will need the server to keep running in order to be able to be 'live.' It's reccommended that you use an auxiliary computer solely dedicated to this, and not your primary computer that you use for other functions. You don't want too many processes competing with this.
 
