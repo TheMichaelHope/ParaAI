@@ -111,11 +111,11 @@ Note that like with any program, this bot will need the server to keep running i
 
 Barring a server collapse on Twitter's end, if your program crashes it's likely one of two errors occurred:
 
-#### Error code 186: Duplicate status.
+#### Error code 186: Duplicate Status.
 
 Twitter doesn't let you tweet the same exact thing twice within a certain period of time. You shouldn't receive this error because the `tweeted` container handles it, but if you do, simply remove the offending tweet from the text file.
 
-#### Error code 187: Limit break.
+#### Error code 187: Limit Break.
 
 Twitter doesn't let you tweet more than 280 characters. You also shouldn't receive this error because it's handled (twice) but if you do, simply add a `====================` between the offending tweet to space it out or remove it as you see fit.
 
