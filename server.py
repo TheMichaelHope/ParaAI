@@ -18,7 +18,7 @@ tweeted = []
 
 
 for tweet in bot_output:
-    if len(tweet) <= 280: # error handling for Limit break error (187)
+    if len(tweet) <= 280: # error handling for Limit Break error (187)
         if tweet not in tweeted: # error handling for Duplicate error (186)
             try:
                 api.update_status(tweet) # this is the line of code that actually sends tweets
