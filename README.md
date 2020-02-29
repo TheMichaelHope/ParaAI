@@ -135,8 +135,11 @@ A follow-up/update this project would involve:
 ## Credits
 
 download_tweets.py script — [Max Wolff](https://github.com/minimaxir)
+
 GPT2 Training Google Colaboratory Notebook — Max Wolff
+
 server.py — Myself
+
 credentials.py — Myself
 
 
