@@ -133,9 +133,9 @@ You only need these first three starter files in the repo (plus any text file) t
 
 If you are missing one of these, you messed up somewhere, you should probably start over.
 
-If you have any other questions about this or run into any issues, you can reach me on Twitter @Paracelsus.
+If you have any other questions about this or run into any issues, you can reach me on Twitter [@Paracelsus](https://twitter.com/Paracelsus).
 
-A follow-up/update this project would involve:
+A follow-up/update to this project would involve:
 
 * Running it on a dedicated server such as a Raspberry Pi and the process involved with that.
 * Storing multiple text files to read from, instead of manually replacing each one once the tweets are exhausted.
