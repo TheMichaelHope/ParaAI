@@ -6,10 +6,12 @@
 This can be any Twitter account, or even your current one.
 
 ### Step 2: Apply for developer account access.
-[Here is a link to do just that (you need to be signed in to the bot account already)](https://developer.twitter.com/en/apply-for-access)
+[Here is a link to do just that (you need to be signed in to the bot account already)](https://developer.twitter.com/en/apply-for-access).
 
 ### Step 3: Create a Twitter app in the bot's name. 
-After getting approved for your developer account, you should be met with a page to create an account. Just in case [here is a link to the page](https://developer.twitter.com/en/apps)
+After getting approved for your developer account, you should be met with a page to create an account. 
+
+Just in case, [here is a link to the page](https://developer.twitter.com/en/apps).
 
 ### Step 4: Acquire the access tokens. 
 After creating the app, go to the Keys and tokens page to collect the `API key`, `Secret key` and generate the `Access token` and `Access token secret` keys. **Make sure to save them immediately, you have one chance to view them before they remain permanently hidden from view.** If you forget them you'll have to regenerate them.
@@ -130,7 +132,12 @@ A follow-up/update this project would involve:
 * Including images and videos with the tweets.
 
 
+## Credits
 
+download_tweets.py script — [Max Wolff](https://github.com/minimaxir)
+GPT2 Training Google Colaboratory Notebook — Max Wolff
+server.py — Myself
+credentials.py — Myself
 
 
 
