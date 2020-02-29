@@ -123,7 +123,7 @@ Twitter doesn't let you tweet more than 280 characters. You also shouldn't recei
 
 ## Appendix
 
-You only need these first three starter files in the repo (plus the text file) to actually run the bot, but by the time you get to this part of the README you should have in your project directory the following files:
+You only need these first three starter files in the repo (plus any text file) to actually run the bot, but by the time you get to this part of the README you should have in your project directory the following files:
 
 * server.py
 * credentials.py
