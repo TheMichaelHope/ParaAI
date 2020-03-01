@@ -42,8 +42,16 @@ for tweet in bot_output:
         api.update_status(tweet[0:279])
         tweeted.append(tweet[0:279])
         time.sleep(30)
-        api.update_status(tweet[279:])
-        tweeted.append(tweet[279:])
+        try:
+            api.update_status(tweet[279:])
+            tweeted.append(tweet[279:])
+        except tweepy.TweepError as error:
+            if error.api_code == 186:
+                new_tweet = tweet[279:558]
+                api.update_status(new_tweet)
+                tweeted.append(new_tweet)
+            else:
+                continue
 
     # this line tells the bot how often to tweet, in this default case every 600 seconds (10 mins)
     time.sleep(600) # I DO NOT RECCOMMEND PUTTING SMALLER NUMBER THAN 90 IN THIS LINE
