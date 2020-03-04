@@ -33,6 +33,10 @@ for tweet in bot_output:
                     else:
                         api.update_status("RT " + new_tweet[0:274]) # cut off the last 3 characters to add RT
                         tweeted.append(new_tweet)
+                elif error.api_code == 408:
+                    new_tweet = "Links will be the death of me."
+                    api.update_status(new_tweet)
+                    tweeted.append(new_tweet)
                 else:
                     continue
         else:
