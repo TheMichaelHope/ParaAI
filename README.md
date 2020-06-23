@@ -9,7 +9,7 @@ This can be any Twitter account, or even your current one.
 [Here is a link to do just that (you need to be signed in to the bot account already)](https://developer.twitter.com/en/apply-for-access).
 
 ### Step 3: Create a Twitter app in the bot's name. 
-After getting approved for your developer account, you should be met with a page to create an account. 
+After getting approved for your developer account, you should be met with a page to create an application. 
 
 Just in case, [here is a link to the page](https://developer.twitter.com/en/apps).
 
