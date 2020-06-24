@@ -6,7 +6,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET) # these should be stored in c
 api = tweepy.API(auth) # this line allows the twitter API access to your account: it can do a lot more than just tweet, read the documentation for more info
 
 # open text file containing tweets and store its contents in tweettext
-filename = open('YOUR_TWEETS.txt','r')
+filename = open('batch_7.txt','r')
 tweettext = filename.read()
 filename.close()
 
@@ -25,7 +25,7 @@ for tweet in bot_output:
                 tweeted.append(tweet) # add tweet to tweeted container
             except tweepy.TweepError as error:
                 # this section was my personalized solution to duplicate tweets, but you can simply discard it and leave the continue statement in place if you do not wish to see any duplicated tweets on this bot
-                if error.api_code == 187: 
+                if error.api_code == 187:
                     new_tweet = "RT " + tweet
                     if len(new_tweet) <= 277:
                         api.update_status("RT " + tweet) # add RT to the tweet if it will keep it under 280
@@ -41,7 +41,7 @@ for tweet in bot_output:
                     continue
         else:
             continue
-    else: 
+    else:
         # this section is my personalized solution to Limit Break tweets, simply splitting them up on the 280th character and tweeting them separately. You are free to choose another solution.
         api.update_status(tweet[0:279])
         tweeted.append(tweet[0:279])
@@ -51,9 +51,17 @@ for tweet in bot_output:
             tweeted.append(tweet[279:])
         except tweepy.TweepError as error:
             if error.api_code == 186:
-                new_tweet = tweet[279:558]
-                api.update_status(new_tweet)
-                tweeted.append(new_tweet)
+                new_tweet = tweet[279:557]
+                try:
+                    api.update_status(new_tweet)
+                    tweeted.append(new_tweet)
+                except tweepy.TweepError as error:
+                    if error.api_code == 186:
+                        newer_tweet = new_tweet[0:279]
+                        api.update_status(new_tweet)
+                        tweeted.append(new_tweet)
+                    else:
+                        continue
             else:
                 continue
 
