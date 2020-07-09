@@ -6,7 +6,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET) # these should be stored in c
 api = tweepy.API(auth) # this line allows the twitter API access to your account: it can do a lot more than just tweet, read the documentation for more info
 
 # open text file containing tweets and store its contents in tweettext
-filename = open('batch_7.txt','r')
+filename = open('batch_9.txt','r')
 tweettext = filename.read()
 filename.close()
 
@@ -58,6 +58,10 @@ for tweet in bot_output:
                 except tweepy.TweepError as error:
                     if error.api_code == 186:
                         newer_tweet = new_tweet[0:279]
+                        api.update_status(new_tweet)
+                        tweeted.append(new_tweet)
+                    elif error.api_code == 408:
+                        new_tweet = "Links will be the death of me."
                         api.update_status(new_tweet)
                         tweeted.append(new_tweet)
                     else:
